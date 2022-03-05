@@ -31,8 +31,8 @@ FROM customer WHERE customer_id IN
   
   
   SELECT payment_id, amount, 
-CASE WHEN amount >= 0 AND amount < 5 THEN 'low' 
-WHEN amount >= 5 THEN 'high' 
+CASE WHEN amount >= 0 AND amount < 2 THEN 'low' 
+WHEN amount >= 4 THEN 'high' 
 END AS category 
 FROM payment;
   
